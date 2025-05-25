@@ -44,11 +44,16 @@
   border: none;
   background: none;
   border-top: 3px solid #fff;
+
   cursor: pointer;
   width: 30px;
   height: 24px;
   position: relative;
   z-index: 999;
+}
+
+.hamburger::before {
+  margin-bottom: 6px;
 }
 
 .hamburger::after,
@@ -58,7 +63,7 @@
   width: 30px;
   height: 3px;
   background: #fff;
-  margin-top: 5px;
+  margin-top: 3px;
   position: relative;
   transition: 0.3s;
 }
@@ -87,7 +92,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #000;
+    background: #0a0a0a;
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-out;
     z-index: 998;
@@ -128,6 +133,7 @@
 
   .active .hamburger::before {
     transform: rotate(135deg);
+    margin-bottom: 5px;
   }
 
   .active .hamburger::after {
