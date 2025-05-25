@@ -1,7 +1,9 @@
+import Header from "@/components/header";
+
 export default function Home() {
   return (
-    <div>
-      <p>Hello world!</p>
+    <div className="container mx-auto px-4">
+      <Header />
     </div>
   );
 }
