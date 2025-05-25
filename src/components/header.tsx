@@ -13,7 +13,7 @@ export default function Header() {
           <span
             style={{
               color: '#5df5ff',
-              textShadow: '0 0 1px #5df5ff, 0 0 2px #5df5ff',
+              textShadow: '0 0 6px #5df5ff88, 0 0 12px #5df5ff44',
             }}
           >
             Santos
