@@ -16,7 +16,7 @@ export default function Main() {
                     </p>
                     <div className="flex gap-4 mb-8 flex-wrap justify-center md:justify-start">
                         <a
-                            href="https://www.linkedin.com/"
+                            href="https://www.linkedin.com/in/estevao-santos-ribeiro/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-gray-900 transition"
@@ -25,7 +25,7 @@ export default function Main() {
                             LinkedIn
                         </a>
                         <a
-                            href="https://www.instagram.com/"
+                            href="https://www.instagram.com/estevaosantos23"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-gray-900 transition"
@@ -34,7 +34,7 @@ export default function Main() {
                             Instagram
                         </a>
                         <a
-                            href="https://github.com/"
+                            href="https://github.com/estevaosantosribeiro"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-gray-900 transition"

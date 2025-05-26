@@ -25,7 +25,7 @@ export default function Footer() {
           <span className="font-semibold mb-1">Links importantes</span>
           <div className="flex flex-col gap-2 text-lg">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/estevaosantos23"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-[#5df5ff] transition"
@@ -34,7 +34,7 @@ export default function Footer() {
               <FaInstagram /> Instagram
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/estevao-santos-ribeiro/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-[#5df5ff] transition"
@@ -43,7 +43,7 @@ export default function Footer() {
               <FaLinkedin /> LinkedIn
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/estevaosantosribeiro"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-[#5df5ff] transition"
