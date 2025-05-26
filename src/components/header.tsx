@@ -37,10 +37,10 @@ export default function Header() {
         overflow: 'hidden',
         transition: 'height 0.4s cubic-bezier(0.4,0,0.2,1)',
         boxShadow: show ? '0 2px 16px #0002' : 'none',
-        background: 'rgba(10, 10, 10, 1)', // #0a0a0a com alpha 0.98
+        background: 'rgba(10, 10, 10, 0.98)', // #0a0a0a com alpha 0.98
       }}
     >
-      <nav className={`${styles.nav} ${active ? styles.active : ''}`}>
+      <nav className={`${styles.nav} ${active ? styles.active : ''} px-4 md:px-0`}>
         <div className='font-bold text-2xl text-white'>
           Estevão{' '}
           <span

@@ -43,7 +43,7 @@ export default function Carrosel() {
       </div>
       <style jsx>{`
         .animate-scroll {
-          animation: scroll 20s linear infinite;
+          animation: scroll 14s linear infinite;
         }
         @keyframes scroll {
           0% {

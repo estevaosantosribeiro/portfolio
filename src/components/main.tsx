@@ -3,7 +3,7 @@ import { FaLinkedin, FaInstagram, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export default function Main() {
     return (
-        <main id="about" className="flex items-center justify-center min-h-screen text-white">
+        <main id="about" className="flex items-center justify-center min-h-screen text-white pt-16">
             <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-center gap-8">
                 <div className="flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left md:ml-12">
                     <h1 className="text-3xl md:text-4xl font-bold mb-4">
