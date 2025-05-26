@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Main from "@/components/main";
 import Projetos from "@/components/projetos";
 import Carrosel from "@/components/carrosel";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Formacao />
       <Projetos />
       <Carrosel />
+      <Footer />
     </div>
   );
 }
