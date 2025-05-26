@@ -16,7 +16,7 @@ const logos = [
 export default function Carrosel() {
   return (
     <div className="w-full overflow-hidden py-8 bg-transparent">
-      <div className="flex items-center gap-16 animate-scroll whitespace-nowrap">
+      <div className="flex items-center gap-6 sm:gap-16 animate-scroll whitespace-nowrap">
         {logos.map((logo) => (
           <div key={logo.alt} className="inline-block">
             <Image
@@ -24,7 +24,7 @@ export default function Carrosel() {
               alt={logo.alt}
               width={80}
               height={80}
-              className="mx-2 sm:mx-4 transition duration-300 w-12 h-12 sm:w-[80px] sm:h-[80px] min-w-12 min-h-12 sm:min-w-[80px] sm:min-h-[80px] max-w-none max-h-none"
+              className="mx-1 sm:mx-4 transition duration-300 w-12 h-12 sm:w-[80px] sm:h-[80px] min-w-12 min-h-12 sm:min-w-[80px] sm:min-h-[80px] max-w-none max-h-none"
             />
           </div>
         ))}
@@ -36,21 +36,21 @@ export default function Carrosel() {
               alt={logo.alt}
               width={80}
               height={80}
-              className="mx-2 sm:mx-4 transition duration-300 w-12 h-12 sm:w-[80px] sm:h-[80px] min-w-12 min-h-12 sm:min-w-[80px] sm:min-h-[80px] max-w-none max-h-none"
+              className="mx-1 sm:mx-4 transition duration-300 w-12 h-12 sm:w-[80px] sm:h-[80px] min-w-12 min-h-12 sm:min-w-[80px] sm:min-h-[80px] max-w-none max-h-none"
             />
           </div>
         ))}
       </div>
       <style jsx>{`
         .animate-scroll {
-          animation: scroll 14s linear infinite;
+          animation: scroll 20s linear infinite;
         }
         @keyframes scroll {
           0% {
             transform: translateX(0%);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(-127%);
           }
         }
       `}</style>
