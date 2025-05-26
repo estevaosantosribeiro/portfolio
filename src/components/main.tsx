@@ -1,7 +1,38 @@
+'use client';
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { FaLinkedin, FaInstagram, FaGithub, FaWhatsapp } from "react-icons/fa";
 
+const words = ["Web", "Front-end", "Back-end", "Mobile"];
+
 export default function Main() {
+    const [currentWord, setCurrentWord] = useState(0);
+    const [displayed, setDisplayed] = useState("");
+    const [typing, setTyping] = useState(true);
+
+    useEffect(() => {
+        let timeout: NodeJS.Timeout;
+        if (typing) {
+            if (displayed.length < words[currentWord].length) {
+                timeout = setTimeout(() => {
+                    setDisplayed(words[currentWord].slice(0, displayed.length + 1));
+                }, 100);
+            } else {
+                timeout = setTimeout(() => setTyping(false), 1200);
+            }
+        } else {
+            if (displayed.length > 0) {
+                timeout = setTimeout(() => {
+                    setDisplayed(words[currentWord].slice(0, displayed.length - 1));
+                }, 50);
+            } else {
+                setTyping(true);
+                setCurrentWord((prev) => (prev + 1) % words.length);
+            }
+        }
+        return () => clearTimeout(timeout);
+    }, [displayed, typing, currentWord]);
+
     return (
         <main id="about" className="flex items-center justify-center min-h-screen text-white pt-16">
             <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-center gap-8">
@@ -10,6 +41,20 @@ export default function Main() {
                         Olá, me chamo{" "}
                         <span style={{ color: "#5df5ff" }}>Estevão</span>
                     </h1>
+                    <h2 className="text-xl md:text-2xl font-semibold mb-4">
+                        Desenvolvedor{" "}
+                        <span
+                            style={{
+                                color: "#5df5ff",
+                                borderRight: "2px solid #5df5ff",
+                                paddingRight: "4px",
+                                whiteSpace: "pre",
+                                transition: "color 0.3s",
+                            }}
+                        >
+                            {displayed}
+                        </span>
+                    </h2>
                     <p className="text-lg mb-8">
                         Sou um desenvolvedor web apaixonado por criar experiências digitais
                         modernas e eficientes.
